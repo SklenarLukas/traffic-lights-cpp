@@ -31,7 +31,7 @@ void pedestriansWaitLed::setWaitLedState(Mode p_new_mode)
 void pedestriansWaitLed::pedestriansWaitLedOff()
 {
     gpio_set_level(p_wait_pin, p_wait_mode == Mode::OFF ? 0 : 1);
-    ESP_LOGD(TAG, "Switching to ON state, pin: %d", p_wait_pin);
+    ESP_LOGD(TAG, "Switching to OFF state, pin: %d", p_wait_pin);
 }
 
 void pedestriansWaitLed::pedestriansWaitLedOn()
